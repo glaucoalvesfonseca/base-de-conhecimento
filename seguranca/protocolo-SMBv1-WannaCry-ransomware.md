@@ -65,7 +65,9 @@ Padrão: 1 = ativado
 ```
 Para habilitar ou desabilitar o SMBv2 no servidor SMB, configure a seguinte chave do registro:
 
+```
 Subchave do registro: entrada de registroHKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters: SMB2
 REG_DWORD: 0 = desativado
 REG_DWORD: 1 = ativado
 Padrão: 1 = ativado
+```
