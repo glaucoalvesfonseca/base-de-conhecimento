@@ -51,3 +51,21 @@ Para desabilitar o SMBv1 no servidor SMB, execute o seguinte cmdlet:
 `Conjunto ItemProperty-caminho "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB2 -Digite DWORD -valor 1 - Force`
 
 *Observação: Você deve reiniciar o computador após fazer essas alterações.*
+
+## No Editor do registro (caso as opções acima não funcionem)
+
+**Importante**: Esta parte contém informações sobre como modificar o registro. Certifique-se de fazer backup do registro antes de modificá-lo. Certifique-se de que você saiba como restaurar o registro caso ocorra um problema. 
+
+Para ativar ou desativar SMBv1 no servidor SMB, configure a seguinte chave do registro:
+```
+Subchave do registro: entrada de registro HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters: SMB1
+REG_DWORD: 0 = desativado
+REG_DWORD: 1 = ativado
+Padrão: 1 = ativado
+```
+Para habilitar ou desabilitar o SMBv2 no servidor SMB, configure a seguinte chave do registro:
+
+Subchave do registro: entrada de registroHKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters: SMB2
+REG_DWORD: 0 = desativado
+REG_DWORD: 1 = ativado
+Padrão: 1 = ativado
