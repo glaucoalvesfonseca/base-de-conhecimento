@@ -71,3 +71,7 @@ REG_DWORD: 0 = desativado
 REG_DWORD: 1 = ativado
 Padrão: 1 = ativado
 ```
+
+Para maiores detalhes e informações, visite a página de suporte da Microsoft:
+
+https://support.microsoft.com/pt-br/help/2696547/how-to-enable-and-disable-smbv1,-smbv2,-and-smbv3-in-windows-vista,-windows-server-2008,-windows-7,-windows-server-2008-r2,-windows-8,-and-windows-server-2012
