@@ -36,19 +36,19 @@ Para habilitar ou desabilitar os protocolos SMB em um servidor SMB que esteja ex
 
 Para desabilitar o SMBv1 no servidor SMB, execute o seguinte cmdlet:
 
-`ItemProperty Set-SMB1 do caminho "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"-type DWORD-value 0 - Force`
+`Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB1 -Type DWORD -Value 0 -Force`
 
 **Para desabilitar o SMBv2 e SMBv3 no servidor SMB, execute o seguinte cmdlet:**
 
-`ItemProperty Set-SMB2 do caminho "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"-digite DWORD-valor 0 - Force`
+`Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB2 -Type DWORD -Value 0 -Force`
 
 **Para ativar o servidor SMB SMBv1, execute o seguinte cmdlet:**
 
-`Conjunto ItemProperty-caminho "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB1 -Digite DWORD -valor 1 - Force`
+`Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB1 -Type DWORD -Value 1 -Force`
 
 **Para habilitar o SMBv2 e SMBv3 no servidor SMB, execute o seguinte cmdlet:**
 
-`Conjunto ItemProperty-caminho "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB2 -Digite DWORD -valor 1 - Force`
+`Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB2 -Type DWORD -Value 1 -Force`
 
 *Observação: Você deve reiniciar o computador após fazer essas alterações.*
 
