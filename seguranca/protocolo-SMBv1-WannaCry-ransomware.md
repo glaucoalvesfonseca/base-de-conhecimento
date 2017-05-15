@@ -12,6 +12,7 @@ Para obter o estado atual da configuração de protocolo do servidor SMB, execut
 `Get-SmbServerConfiguration | Select EnableSMB1Protocol, EnableSMB2Protocol`
 
 **Para desabilitar o SMBv1 no servidor SMB, execute o seguinte cmdlet:**
+
 `Set-SmbServerConfiguration -EnableSMB1Protocol $false`
 
 **Para desabilitar o SMBv2 e SMBv3 no servidor SMB, execute o seguinte cmdlet:**
