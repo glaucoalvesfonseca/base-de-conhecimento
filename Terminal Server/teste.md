@@ -1,4 +1,4 @@
-## Teste
+# Teste
 
 *Teste*
 **Teste**
