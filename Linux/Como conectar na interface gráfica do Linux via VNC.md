@@ -16,4 +16,4 @@
 
 1. Abra o UltraVNC em seu desktop
 2. Conecte-se no IP `10.0.28.26:5901` (não esqueça de informar a porta). A senha é `unimed,290`
-3. Após o uso, encerre a conexão do UltraVNC fechando no <span style="color: red">X</span> vermelho
+3. Após o uso, encerre a conexão do UltraVNC fechando no X vermelho
